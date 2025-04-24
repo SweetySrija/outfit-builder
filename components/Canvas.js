@@ -5,7 +5,7 @@ import styles from './Canvas.module.css';
 
 export default function Canvas() {
   const [droppedItems, setDroppedItems] = useState({});
-  const [saved, setSaved] = useState(false); // for showing saved message
+  const [saved, setSaved] = useState(false);
   const addToCart = useStore((state) => state.addToCart);
 
   const [{ isOver }, drop] = useDrop(() => ({
@@ -43,7 +43,6 @@ export default function Canvas() {
       <h1 className={styles.heading}>Outfit Builder</h1>
 
       <div className={styles.layoutContainer}>
-        {/* Sidebar */}
         <div className={styles.sidebar}>
           <h2 className={styles.subHeading}>Select Your Clothing</h2>
           <div className={styles.verticalItems}>
@@ -61,7 +60,7 @@ export default function Canvas() {
           </div>
         </div>
 
-        {/* Canvas */}
+        
         <div
           ref={drop}
           className={styles.canvas}
@@ -93,7 +92,7 @@ export default function Canvas() {
         </div>
       </div>
 
-      {/* Buttons below */}
+
       <div className={styles.buttonContainer}>
         {saved && <div className={styles.savedText}>Saved!</div>}
 

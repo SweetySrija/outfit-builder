@@ -15,7 +15,7 @@ export const useStore = create((set) => ({
       const counts = {};
       const updated = [];
 
-      // Group items
+      
       state.cartItems.forEach((item) => {
         counts[item.name] = counts[item.name] || { ...item, count: 0 };
         counts[item.name].count += 1;
@@ -26,7 +26,7 @@ export const useStore = create((set) => ({
         if (counts[itemName].count < 0) counts[itemName].count = 0;
       }
 
-      // Rebuild array
+
       Object.values(counts).forEach((item) => {
         for (let i = 0; i < item.count; i++) {
           updated.push({ name: item.name, image: item.image });

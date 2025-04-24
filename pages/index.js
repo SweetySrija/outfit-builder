@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
 
-      {/* This contains sidebar and canvas */}
+
       <Canvas />
 
       <Cart />

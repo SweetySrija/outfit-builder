@@ -6,7 +6,7 @@ export default function Cart() {
   const removeAllFromCart = useStore((state) => state.removeAllFromCart);
   const updateCartItemCount = useStore((state) => state.updateCartItemCount);
 
-  // Group items by name
+
   const itemCounts = cartItems.reduce((acc, item) => {
     if (!acc[item.name]) {
       acc[item.name] = { ...item, count: 1 };
