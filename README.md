@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Outfit Builder
 
-## Getting Started
+A WYSIWYG web-based outfit editor built using **Next.js**, allowing users to mix and match clothing items visually, save their styles, and add outfits to cart.
 
-First, run the development server:
+---
+
+## How to Install Dependencies
 
 ```bash
+npm install
+
+## How to Run the app locally 
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+then go to http://localhost:3000 or given port in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Drag and drop clothing items to create outfits
+Save outfit combinations
+Add outfits to a cart
+Increase/decrease quantity of items
+Remove individual or all items from the cart
+Sleek modern UI with vertical sidebars
 
-## Learn More
+## Additional
 
-To learn more about Next.js, take a look at the following resources:
+Clothing icons should be stored in the /public/clothing folder.
+All component files are inside the components/ directory.
+Global state is handled using Zustand.
+Styling is modular with Canvas.module.css.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+In Your Terminal :
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git init
+git add .
+git commit -m "Sol"
